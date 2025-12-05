@@ -502,3 +502,99 @@ body {
   font-size: 14px;
   color: #555;
 }
+
+@media (max-width: 768px) {
+
+    .header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .header__left,
+    .header__right {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .header__right {
+        gap: 10px;
+    }
+
+    .main {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main__img {
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    .main__text h1 {
+        font-size: 32px;
+    }
+
+    .icon-strip {
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .promos {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .promo-left,
+    .promo-right {
+        width: 100%;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .category-list {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .category-item img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .eco-box {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .eco-image img {
+        width: 90%;
+    }
+
+    .best-sell-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .best-sell-card img {
+        width: 100%;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+        padding: 30px 10px;
+    }
+}
+
