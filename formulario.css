@@ -68,7 +68,7 @@ textarea {
 /* ----------------- Radio Buttons ----------------- */
 .radio-group {
   display: flex;
-  align-items: center;
+  align-items: vertical;
   gap: 8px;
   margin-bottom: 10px;
 }
@@ -112,3 +112,4 @@ button:hover {
     margin: 20px auto;
   }
 }
+
