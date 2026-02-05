@@ -8,15 +8,17 @@
 body {
   background-color: #FFFBEA;
   color: #222;
+  line-height: 1.5;
 }
 
-/* ---------- Form Container ---------- */
+/* ----------------- Form Container ----------------- */
 .form-container {
   max-width: 520px;
   margin: 60px auto;
   padding: 0 20px;
 }
 
+/* ----------------- Titles ----------------- */
 .form-title {
   text-align: center;
   margin-bottom: 8px;
@@ -34,7 +36,7 @@ body {
   font-weight: 400;
 }
 
-/* ---------- Form ---------- */
+/* ----------------- Form ----------------- */
 form {
   background: #ffffff;
   padding: 32px;
@@ -46,28 +48,19 @@ form {
   margin-bottom: 18px;
 }
 
-.radio-group {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin-bottom: 10px;
-}
-
 label.field-label {
   display: block;
   margin-bottom: 6px;
   font-weight: 800;
-  font-family: 'Lora', serif;
 }
 
+/* ----------------- Inputs ----------------- */
 input, select, textarea {
   width: 100%;
   padding: 12px;
   border-radius: 10px;
   border: 1px solid #ddd;
-  font-family: 'Lora', serif;
   font-size: 14px;
-  font-weight: 400;
   color: #5DC067;
 }
 
@@ -76,27 +69,24 @@ textarea {
   resize: vertical;
 }
 
-/* ---------- Radio Buttons ---------- */
+/* ----------------- Radio Buttons ----------------- */
 .radio-group {
   display: flex;
-  gap: 20px;
-  align-items: center;
+  gap: 20px;        /* space between radio options */
   margin-top: 10px;
 }
 
-.radio-group label {
+.radio-group > div {
   display: flex;
   align-items: center;
-  gap: 6px;
-  font-weight: 400;
-  color: #5DC067;
+  gap: 6px;          /* space between radio and label */
 }
 
 input[type="radio"]:checked {
   accent-color: #5DC067;
 }
 
-/* ---------- Button ---------- */
+/* ----------------- Button ----------------- */
 button {
   margin-top: 30px;
   width: 100%;
@@ -116,8 +106,21 @@ button:hover {
   opacity: 0.85;
 }
 
-/* ---------- Responsive ---------- */
+/* ----------------- Responsive ----------------- */
 @media (max-width: 480px) {
+  .form-title {
+    font-size: 26px;
+  }
+
+  .form-subtitle {
+    font-size: 14px;
+  }
+
+  form {
+    padding: 24px;
+    margin: 20px auto;
+  }
+
   .radio-group {
     flex-direction: column;
     align-items: flex-start;
