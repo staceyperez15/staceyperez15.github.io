@@ -639,8 +639,8 @@ body {
     .payment-icons img {
         margin: 0 10px;
     }
-
 }
+
 @keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
     transform: translateY(0);
@@ -658,4 +658,106 @@ body {
 .show-more-btn:hover,
 .subscribe-btn:hover {
     animation: bounce 0.6s ease;
+}
+
+.form-title {
+  text-align: center;
+  margin-bottom: 8px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 800;
+}
+
+.form-subtitle {
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: 'Lora', serif;
+  font-size: 15px;
+  color: #5DC067;
+  font-weight: 400;
+}
+
+form {
+  max-width: 520px;
+  margin: 60px auto;
+  padding: 32px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+
+form h1, form h2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 800;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+form > div {
+  margin-bottom: 18px;
+}
+
+label.field-label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 800; 
+  font-family: 'Lora', serif;
+}
+
+.radio-group label,
+.checkbox-group label {
+  font-weight: 400; 
+  font-family: 'Lora', serif;
+  color: #5DC067;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-family: 'Lora', serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #5DC067;
+}
+
+textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+
+.options {
+  margin-top: 10px;
+}
+
+.checkbox-group,
+.radio-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+input[type="radio"]:checked {
+  accent-color: #5DC067;
+}
+
+button {
+  margin-top: 30px;
+  width: 100%;
+  padding: 14px;
+  border-radius: 12px;
+  border: none;
+  background: #5DC067;
+  color: white;
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+  font-weight: 700; 
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  opacity: 0.85;
 }
