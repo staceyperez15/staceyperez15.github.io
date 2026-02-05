@@ -8,62 +8,60 @@
 </head>
 <body>
 
-  <div class="form-container">
-    <h1 class="form-title">Create Your Custom Jewelry</h1>
-    <p class="form-subtitle">
-      Completa el formulario para recibir información personalizada.
-    </p>
+  <h1 class="form-title">Create Your Custom Jewelry</h1>
+  <p class="form-subtitle">
+    Completa el formulario para recibir información personalizada.
+  </p>
 
-    <form action="https://echo.htmlacademy.ru/">
-      
-      <div class="form-group">
-        <label class="field-label" for="name">Nombre completo:</label>
-        <input type="text" id="name" name="name" required>
+  <form action="https://echo.htmlacademy.ru/">
+
+    <div>
+      <label class="field-label" for="name">Nombre completo:</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+
+    <div>
+      <label class="field-label" for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+
+    <div>
+      <label class="field-label" for="type">Tipo de joyería:</label>
+      <select id="type" name="type">
+        <option>Collar</option>
+        <option>Pulsera</option>
+        <option>Anillo</option>
+        <option>Aretes</option>
+        <option>Diseño personalizado</option>
+      </select>
+    </div>
+
+    <div>
+      <label class="field-label" for="contact">Medio de contacto preferido:</label>
+      <div class="radio-group">
+        <input type="radio" id="emailContact" name="contact" value="email">
+        <label for="emailContact">Correo electrónico</label>
       </div>
 
-      <div class="form-group">
-        <label class="field-label" for="email">Correo electrónico:</label>
-        <input type="email" id="email" name="email" required>
+      <div class="radio-group">
+        <input type="radio" id="smsContact" name="contact" value="sms">
+        <label for="smsContact">SMS</label>
       </div>
 
-      <div class="form-group">
-        <label class="field-label" for="type">Tipo de joyería:</label>
-        <select id="type" name="type">
-          <option>Collar</option>
-          <option>Pulsera</option>
-          <option>Anillo</option>
-          <option>Aretes</option>
-          <option>Diseño personalizado</option>
-        </select>
+      <div class="radio-group">
+        <input type="radio" id="whatsappContact" name="contact" value="whatsapp">
+        <label for="whatsappContact">WhatsApp</label>
       </div>
+    </div>
 
-      <div class="form-group">
-        <label class="field-label">Medio de contacto preferido:</label>
-        <div class="radio-group">
-          <label>
-            <input type="radio" name="contact" value="email" checked>
-            Correo electrónico
-          </label>
-          <label>
-            <input type="radio" name="contact" value="sms">
-            SMS
-          </label>
-          <label>
-            <input type="radio" name="contact" value="whatsapp">
-            WhatsApp
-          </label>
-        </div>
-      </div>
+    <div>
+      <label class="field-label" for="message">Mensaje:</label>
+      <textarea id="message" name="message" placeholder="Describe tu idea"></textarea>
+    </div>
 
-      <div class="form-group">
-        <label class="field-label" for="message">Mensaje:</label>
-        <textarea id="message" name="message" placeholder="Describe tu idea"></textarea>
-      </div>
+    <button type="submit">Enviar</button>
 
-      <button type="submit">Enviar</button>
-
-    </form>
-  </div>
+  </form>
 
 </body>
 </html>
