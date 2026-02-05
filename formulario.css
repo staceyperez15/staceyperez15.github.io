@@ -1,121 +1,118 @@
-/* ----------------- Global ----------------- */
 * {
-    font-family: 'Lora', serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  font-family: 'Lora', serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: #FFFBEA;
-    color: #222;
+  background-color: #FFFBEA;
+  color: #222;
 }
 
-/* ----------------- Form Container ----------------- */
+/* ---------- Form Container ---------- */
 .form-container {
-    max-width: 520px;
-    margin: 60px auto;
-    padding: 32px;
-    background: #ffffff;
-    border-radius: 20px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  max-width: 520px;
+  margin: 60px auto;
+  padding: 0 20px;
 }
 
 .form-title {
-    font-family: 'Playfair Display', serif;
-    font-weight: 800;
-    text-align: center;
-    font-size: 32px;
-    margin-bottom: 10px;
+  text-align: center;
+  margin-bottom: 8px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 800;
+  font-size: 32px;
 }
 
 .form-subtitle {
-    text-align: center;
-    font-size: 16px;
-    margin-bottom: 30px;
-    color: #4a4a4a;
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: 'Lora', serif;
+  font-size: 15px;
+  color: #5DC067;
+  font-weight: 400;
 }
 
-/* ----------------- Form Elements ----------------- */
+/* ---------- Form ---------- */
+form {
+  background: #ffffff;
+  padding: 32px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
 .form-group {
-    margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
-.field-label {
-    display: block;
-    font-weight: 700;
-    margin-bottom: 8px;
+label.field-label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 800;
+  font-family: 'Lora', serif;
 }
 
 input, select, textarea {
-    width: 100%;
-    padding: 12px 15px;
-    border-radius: 10px;
-    border: 1px solid #ddd;
-    font-size: 14px;
-    color: #5DC067;
-    outline: none;
-    transition: border 0.3s ease;
-}
-
-input:focus, select:focus, textarea:focus {
-    border: 1px solid #5DC067;
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-family: 'Lora', serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #5DC067;
 }
 
 textarea {
-    min-height: 100px;
-    resize: vertical;
+  min-height: 90px;
+  resize: vertical;
 }
 
-/* ----------------- Radio Buttons ----------------- */
+/* ---------- Radio Buttons ---------- */
 .radio-group {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-top: 10px;
 }
 
 .radio-group label {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    font-weight: 400;
-    color: #5DC067;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 400;
+  color: #5DC067;
 }
 
 input[type="radio"]:checked {
-    accent-color: #5DC067;
+  accent-color: #5DC067;
 }
 
-/* ----------------- Button ----------------- */
+/* ---------- Button ---------- */
 button {
-    width: 100%;
-    padding: 14px;
-    border-radius: 12px;
-    background: #5DC067;
-    color: white;
-    font-size: 16px;
-    font-weight: 700;
-    cursor: pointer;
-    border: none;
-    transition: 0.3s ease;
+  margin-top: 30px;
+  width: 100%;
+  padding: 14px;
+  border-radius: 12px;
+  border: none;
+  background: #5DC067;
+  color: white;
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s ease;
 }
 
 button:hover {
-    opacity: 0.85;
+  opacity: 0.85;
 }
 
-/* ----------------- Responsive ----------------- */
+/* ---------- Responsive ---------- */
 @media (max-width: 480px) {
-    .form-container {
-        padding: 20px;
-        margin: 40px 20px;
-    }
-
-    .form-title {
-        font-size: 28px;
-    }
-
-    .form-subtitle {
-        font-size: 14px;
-    }
+  .radio-group {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
