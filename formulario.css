@@ -13,31 +13,35 @@ body {
 /* ----------------- Titles ----------------- */
 .form-title {
   text-align: center;
+  margin-bottom: 8px;
   font-family: 'Playfair Display', serif;
   font-weight: 800;
-  font-size: 32px;
-  margin-top: 40px;
-  margin-bottom: 8px;
-  display: block;
 }
 
 .form-subtitle {
   text-align: center;
+  margin-bottom: 30px;
   font-family: 'Lora', serif;
   font-size: 15px;
   color: #5DC067;
   font-weight: 400;
-  margin-bottom: 30px;
-  display: block;
 }
-/* ----------------- Form ----------------- */
+
 form {
   max-width: 520px;
-  margin: 0 auto 60px auto;
+  margin: 60px auto;
   padding: 32px;
   background: #ffffff;
   border-radius: 20px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+
+form h1, form h2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 800;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
 form > div {
@@ -47,7 +51,15 @@ form > div {
 label.field-label {
   display: block;
   margin-bottom: 6px;
-  font-weight: 800;
+  font-weight: 800; 
+  font-family: 'Lora', serif;
+}
+
+.radio-group label,
+.checkbox-group label {
+  font-weight: 400; 
+  font-family: 'Lora', serif;
+  color: #5DC067;
 }
 
 input, select, textarea {
@@ -57,6 +69,7 @@ input, select, textarea {
   border: 1px solid #ddd;
   font-family: 'Lora', serif;
   font-size: 14px;
+  font-weight: 400;
   color: #5DC067;
 }
 
@@ -65,10 +78,14 @@ textarea {
   resize: vertical;
 }
 
-/* ----------------- Radio Buttons ----------------- */
+.options {
+  margin-top: 10px;
+}
+
+.checkbox-group,
 .radio-group {
   display: flex;
-  align-items: vertical;
+  align-items: center;
   gap: 8px;
   margin-bottom: 10px;
 }
@@ -77,7 +94,6 @@ input[type="radio"]:checked {
   accent-color: #5DC067;
 }
 
-/* ----------------- Button ----------------- */
 button {
   margin-top: 30px;
   width: 100%;
@@ -88,7 +104,7 @@ button {
   color: white;
   font-family: 'Playfair Display', serif;
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 700; 
   cursor: pointer;
   transition: 0.3s ease;
 }
@@ -112,4 +128,5 @@ button:hover {
     margin: 20px auto;
   }
 }
+
 
